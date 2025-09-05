@@ -1,7 +1,7 @@
 #include <stdio.h>
-int main() {
+int main(){
 
-char estado1=25, estado2=20;
+char estado1[2], estado2[2];
 char codigo1[5], codigo2[5];
 char nome1[20], nome2[20];
 int populacao1, populacao2;
@@ -14,6 +14,7 @@ CADASTRANDO AS CARTAS DO SUPER TRUNFO
 
 CARTA 1:
 */
+
 
 printf("Siga as instrucoes abaixo para cadastrar as cartas 'N°1' E 'N°2':\n\n");
 
@@ -41,9 +42,7 @@ scanf("%d", &pontos1);
 
 printf("\nDados da carta '1' obtidos com sucesso!\n");
 
-
-      //cadastro da carta 2
-
+//CARTA 2
 
 printf("\nAgora, digite uma letra de 'A' a 'H' para a carta 2:");
 scanf("%s", &estado2);
@@ -66,7 +65,6 @@ scanf("%f", &pib2);
 
 printf("Digite a quantidade de pontos turisticos:");
 scanf("%d", &pontos2);
-
 
 // exibição dos dados das cartas n°1 e n°2
 
@@ -92,7 +90,6 @@ printf("Area: %.2f Km²\n", area2);
 printf("PIB: %.02f bilhoes de reais\n", pib2);
 printf("Numero de Pontos Turisticos: %d\n\n", pontos2);
 
-    return 0;
-
+return 0;
 
 }
