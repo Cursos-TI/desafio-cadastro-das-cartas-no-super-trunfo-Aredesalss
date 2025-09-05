@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
 
-char estado1=10, estado2=20;
+char estado1=25, estado2=20;
 char codigo1[5], codigo2[5];
 char nome1[20], nome2[20];
 int populacao1, populacao2;
