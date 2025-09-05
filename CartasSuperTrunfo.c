@@ -66,7 +66,7 @@ scanf("%f", &pib2);
 printf("Digite a quantidade de pontos turisticos:");
 scanf("%d", &pontos2);
 
-// exibição dos dados das cartas n°1 e n°2
+//exibição dos dados das cartas n°1 e n°2
 
 //carta n°1
 
