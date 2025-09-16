@@ -8,6 +8,8 @@ int populacao1, populacao2;
 float area1, area2;
 float pib1, pib2;
 int pontos1, pontos2;
+float densidade1, densidade2;
+float pibpc1, pibpc2;
 
 /*
 CADASTRANDO AS CARTAS DO SUPER TRUNFO
@@ -42,6 +44,9 @@ scanf("%d", &pontos1);
 
 printf("\nDados da carta '1' obtidos com sucesso!\n");
 
+densidade1 = (float) (populacao1 / area1);
+pibpc1 = (float) (pib1 / populacao1);
+
 //CARTA 2
 
 printf("\nAgora, digite uma letra de 'A' a 'H' para a carta 2:");
@@ -66,6 +71,9 @@ scanf("%f", &pib2);
 printf("Digite a quantidade de pontos turisticos:");
 scanf("%d", &pontos2);
 
+densidade2 = (float) (populacao2 / area2);
+pibpc2 = (float) (pib2 / populacao2);
+
 //exibição dos dados das cartas n°1 e n°2
 
 //carta n°1
@@ -78,6 +86,9 @@ printf("Populacao: %d\n", populacao1);
 printf("Area: %.2f Km²\n", area1);
 printf("PIB: %.02f bilhoes de reais\n", pib1);
 printf("Numero de Pontos Turisticos: %d\n\n", pontos1);
+printf("Densidade Populacional:%f \n", densidade1);
+printf("PIB Per Capita: %f \n",pibpc1);
+
 
 //carta n°2
 
@@ -89,6 +100,10 @@ printf("Populacao: %d\n", populacao2);
 printf("Area: %.2f Km²\n", area2);
 printf("PIB: %.02f bilhoes de reais\n", pib2);
 printf("Numero de Pontos Turisticos: %d\n\n", pontos2);
+printf("Densidade Populacional:%f \n", densidade2);
+printf("PIB Per Capita: %f \n",pibpc2);
+
+
 
 return 0;
 
